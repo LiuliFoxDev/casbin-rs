@@ -13,7 +13,6 @@ on:
 
 jobs:
   release:
-    if: github.repository == 'casbin/casbin-rs'
     uses: casbin-rs/semantic-release-action-rust/.github/workflows/release-library.yml@master
     secrets:
       cargo-registry-token: ${{ secrets.CARGO_TOKEN }}
